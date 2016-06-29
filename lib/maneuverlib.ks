@@ -1,15 +1,15 @@
 //functions for making and executing maneuver nodes
-@lazyglobal off. //remove this once i finish this library
+@lazyglobal off. //not permanent
 
 
 //make a node to change an apsis
 function apsisnode {
-  parameter anomaly.  //true anomaly at burn, in degrees
+    parameter anomaly.  //true anomaly at burn, in degrees
 	parameter semimajaxis. //desired semi-major axis of orbit after burn
 	
 	print "Building maneuver node to change apsis.".
-	print "True anomaly at burn: " + anomaly + " degrees.".
-	print "Target semimajor axis: " + semimajaxis + " meters.".
+	print "True anomaly at burn: " + round(anomaly,2) + " degrees.".
+	print "Target semimajor axis: " + round(semimajaxis,2) + " meters.".
 	
 	//things we need
 	//all the calculations use radians
@@ -37,6 +37,7 @@ function apsisnode {
 	//delta-v calculations
 	local nodedeltav is desiredorbitalspeed-orbitalspeedatnode.
 	
+	//return value
 	print "Node complete! DeltaV required: " + nodedeltav + " m/s.".
 	return node(timeatnode, 0, 0, nodedeltav).
 }
