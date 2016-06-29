@@ -4,7 +4,7 @@
 
 //make a node to change an apsis
 function apsisnode {
-    parameter anomaly.  //true anomaly at burn, in degrees
+	parameter anomaly.  //true anomaly at burn, in degrees
 	parameter semimajaxis. //desired semi-major axis of orbit after burn
 	
 	print "Building maneuver node to change apsis.".
