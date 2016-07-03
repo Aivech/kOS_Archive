@@ -1,0 +1,435 @@
+HECS2.ProbeCore
+HECS-2 Probe Core
+===
+    ModuleCommand
+    ---
+        --FIELDS--
+            (get-only) state, is String
+        --EVENTS--
+            (callable) control from here, is KSPEvent
+            (callable) rename vessel, is KSPEvent
+        --ACTIONS--
+    --------------------
+    ModuleReactionWheel
+    ---
+        --FIELDS--
+            (get-only) reaction wheels, is String
+        --EVENTS--
+            (callable) toggle torque, is KSPEvent
+        --ACTIONS--
+            (callable) activate, is KSPAction
+            (callable) deactivate, is KSPAction
+            (callable) toggle, is KSPAction
+    --------------------
+    ModuleSAS
+    ---
+        --FIELDS--
+        --EVENTS--
+        --ACTIONS--
+    --------------------
+    KOSNameTag
+    ---
+        --FIELDS--
+            (get-only) name tag, is String
+        --EVENTS--
+            (callable) change name tag, is KSPEvent
+        --ACTIONS--
+    --------------------
+    ModuleSPU
+    ---
+        --FIELDS--
+            (get-only) spu, is String
+        --EVENTS--
+        --ACTIONS--
+    --------------------
+    ModuleRTAntennaPassive
+    ---
+        --FIELDS--
+            (get-only) omni range, is String
+        --EVENTS--
+        --ACTIONS--
+    --------------------
+    TrajectoriesVesselSettings
+    ---
+        --FIELDS--
+        --EVENTS--
+        --ACTIONS--
+    --------------------
+    ModuleTripLogger
+    ---
+        --FIELDS--
+        --EVENTS--
+        --ACTIONS--
+    --------------------
+    ModuleAeroReentry
+    ---
+        --FIELDS--
+        --EVENTS--
+        --ACTIONS--
+    --------------------
+    PilotRSASFix
+    ---
+        --FIELDS--
+        --EVENTS--
+        --ACTIONS--
+    --------------------
+    ModuleRTDataTransmitter
+    ---
+        --FIELDS--
+            (get-only) comms, is String
+        --EVENTS--
+        --ACTIONS--
+    --------------------
+==========================================
+Pollux.Solar.A
+PPP-AYG �Mooch� 1x3 Photovoltaic Panels
+===
+    ModuleDeployableSolarPanel
+    ---
+        --FIELDS--
+            (get-only) sun exposure, is Single
+            (get-only) energy flow, is Single
+            (get-only) status, is String
+        --EVENTS--
+            (callable) extend panels, is KSPEvent
+        --ACTIONS--
+            (callable) toggle panels, is KSPAction
+            (callable) extend panel, is KSPAction
+            (callable) retract panel, is KSPAction
+    --------------------
+    KOSNameTag
+    ---
+        --FIELDS--
+            (get-only) name tag, is String
+        --EVENTS--
+            (callable) change name tag, is KSPEvent
+        --ACTIONS--
+    --------------------
+    ModuleAeroReentry
+    ---
+        --FIELDS--
+        --EVENTS--
+        --ACTIONS--
+    --------------------
+==========================================
+launchClamp1
+TT18-A Launch Stability Enhancer
+===
+    ExtendingLaunchClamp
+    ---
+        --FIELDS--
+        --EVENTS--
+            (callable) release clamp, is KSPEvent
+        --ACTIONS--
+            (callable) release clamp, is KSPAction
+    --------------------
+    ModuleGenerator
+    ---
+        --FIELDS--
+            (get-only) efficiency, is Single
+        --EVENTS--
+        --ACTIONS--
+            (callable) toggle generator, is KSPAction
+            (callable) activate generator, is KSPAction
+            (callable) shutdown generator, is KSPAction
+    --------------------
+    ModuleTestSubject
+    ---
+        --FIELDS--
+        --EVENTS--
+        --ACTIONS--
+    --------------------
+    RefuelingPump
+    ---
+        --FIELDS--
+            (get-only) pump enabled, is Boolean
+        --EVENTS--
+            (callable) toggle pump, is KSPEvent
+        --ACTIONS--
+    --------------------
+    KOSNameTag
+    ---
+        --FIELDS--
+            (get-only) name tag, is String
+        --EVENTS--
+            (callable) change name tag, is KSPEvent
+        --ACTIONS--
+    --------------------
+    ModuleRTAntennaPassive
+    ---
+        --FIELDS--
+            (get-only) omni range, is String
+        --EVENTS--
+        --ACTIONS--
+    --------------------
+    ModuleAeroReentry
+    ---
+        --FIELDS--
+        --EVENTS--
+        --ACTIONS--
+    --------------------
+    ModuleRTDataTransmitter
+    ---
+        --FIELDS--
+            (get-only) comms, is String
+        --EVENTS--
+        --ACTIONS--
+    --------------------
+==========================================
+launchClamp1
+TT18-A Launch Stability Enhancer
+===
+    ExtendingLaunchClamp
+    ---
+        --FIELDS--
+        --EVENTS--
+            (callable) release clamp, is KSPEvent
+        --ACTIONS--
+            (callable) release clamp, is KSPAction
+    --------------------
+    ModuleGenerator
+    ---
+        --FIELDS--
+            (get-only) efficiency, is Single
+        --EVENTS--
+        --ACTIONS--
+            (callable) toggle generator, is KSPAction
+            (callable) activate generator, is KSPAction
+            (callable) shutdown generator, is KSPAction
+    --------------------
+    ModuleTestSubject
+    ---
+        --FIELDS--
+        --EVENTS--
+        --ACTIONS--
+    --------------------
+    RefuelingPump
+    ---
+        --FIELDS--
+            (get-only) pump enabled, is Boolean
+        --EVENTS--
+            (callable) toggle pump, is KSPEvent
+        --ACTIONS--
+    --------------------
+    KOSNameTag
+    ---
+        --FIELDS--
+            (get-only) name tag, is String
+        --EVENTS--
+            (callable) change name tag, is KSPEvent
+        --ACTIONS--
+    --------------------
+    ModuleRTAntennaPassive
+    ---
+        --FIELDS--
+            (get-only) omni range, is String
+        --EVENTS--
+        --ACTIONS--
+    --------------------
+    ModuleAeroReentry
+    ---
+        --FIELDS--
+        --EVENTS--
+        --ACTIONS--
+    --------------------
+    ModuleRTDataTransmitter
+    ---
+        --FIELDS--
+            (get-only) comms, is String
+        --EVENTS--
+        --ACTIONS--
+    --------------------
+==========================================
+KAL9000
+KAL9000 Scriptable Control System
+===
+    kOSProcessor
+    ---
+        --FIELDS--
+            (get-only) kos disk space, is Int32
+            (get-only) kos average power, is Single
+        --EVENTS--
+            (callable) open terminal, is KSPEvent
+            (callable) toggle power, is KSPEvent
+        --ACTIONS--
+            (callable) open terminal, is KSPAction
+            (callable) close terminal, is KSPAction
+            (callable) toggle terminal, is KSPAction
+            (callable) toggle power, is KSPAction
+    --------------------
+    ModuleLight
+    ---
+        --FIELDS--
+        --EVENTS--
+            (callable) lights on, is KSPEvent
+        --ACTIONS--
+            (callable) togglelight, is KSPAction
+            (callable) turn light on, is KSPAction
+            (callable) turn light off, is KSPAction
+    --------------------
+    kOSLightModule
+    ---
+        --FIELDS--
+            (get-only) required power for lights, is Single
+            (settable) light r, is Single
+            (settable) light g, is Single
+            (settable) light b, is Single
+            (get-only) power starved, is Boolean
+            (get-only) last requested power, is Single
+        --EVENTS--
+        --ACTIONS--
+    --------------------
+    KOSNameTag
+    ---
+        --FIELDS--
+            (get-only) name tag, is String
+        --EVENTS--
+            (callable) change name tag, is KSPEvent
+        --ACTIONS--
+    --------------------
+    ModuleAeroReentry
+    ---
+        --FIELDS--
+        --EVENTS--
+        --ACTIONS--
+    --------------------
+==========================================
+sensorBarometer
+PresMat Barometer
+===
+    ModuleEnviroSensor
+    ---
+        --FIELDS--
+            (get-only) display, is String
+        --EVENTS--
+            (callable) toggle display, is KSPEvent
+        --ACTIONS--
+            (callable) toggle display, is KSPAction
+    --------------------
+    ModuleScienceExperiment
+    ---
+        --FIELDS--
+        --EVENTS--
+            (callable) log pressure data, is KSPEvent
+        --ACTIONS--
+            (callable) log pressure data, is KSPAction
+            (callable) delete data, is KSPAction
+    --------------------
+    KOSNameTag
+    ---
+        --FIELDS--
+            (get-only) name tag, is String
+        --EVENTS--
+            (callable) change name tag, is KSPEvent
+        --ACTIONS--
+    --------------------
+    ModuleAeroReentry
+    ---
+        --FIELDS--
+        --EVENTS--
+        --ACTIONS--
+    --------------------
+==========================================
+sensorThermometer
+2HOT Thermometer
+===
+    ModuleEnviroSensor
+    ---
+        --FIELDS--
+            (get-only) display, is String
+        --EVENTS--
+            (callable) toggle display, is KSPEvent
+        --ACTIONS--
+            (callable) toggle display, is KSPAction
+    --------------------
+    ModuleScienceExperiment
+    ---
+        --FIELDS--
+        --EVENTS--
+            (callable) log temperature, is KSPEvent
+        --ACTIONS--
+            (callable) log temperature, is KSPAction
+            (callable) delete data, is KSPAction
+    --------------------
+    KOSNameTag
+    ---
+        --FIELDS--
+            (get-only) name tag, is String
+        --EVENTS--
+            (callable) change name tag, is KSPEvent
+        --ACTIONS--
+    --------------------
+    ModuleAeroReentry
+    ---
+        --FIELDS--
+        --EVENTS--
+        --ACTIONS--
+    --------------------
+==========================================
+KMI
+KMI
+===
+    ModuleAnimateGeneric
+    ---
+        --FIELDS--
+        --EVENTS--
+        --ACTIONS--
+            (callable) toggle, is KSPAction
+    --------------------
+    SolarExperiment
+    ---
+        --FIELDS--
+        --EVENTS--
+        --ACTIONS--
+            (callable) deploy, is KSPAction
+            (callable) delete images, is KSPAction
+    --------------------
+    KOSNameTag
+    ---
+        --FIELDS--
+            (get-only) name tag, is String
+        --EVENTS--
+            (callable) change name tag, is KSPEvent
+        --ACTIONS--
+    --------------------
+    ModuleAeroReentry
+    ---
+        --FIELDS--
+        --EVENTS--
+        --ACTIONS--
+    --------------------
+==========================================
+KerbalDustExperiment
+Kerbal Dust Experiment
+===
+    ModuleAnimateGeneric
+    ---
+        --FIELDS--
+        --EVENTS--
+        --ACTIONS--
+            (callable) toggle lid, is KSPAction
+    --------------------
+    ModuleScienceExperiment
+    ---
+        --FIELDS--
+        --EVENTS--
+            (callable) run dust analysis, is KSPEvent
+        --ACTIONS--
+            (callable) run dust analysis, is KSPAction
+            (callable) discard data, is KSPAction
+    --------------------
+    KOSNameTag
+    ---
+        --FIELDS--
+            (get-only) name tag, is String
+        --EVENTS--
+            (callable) change name tag, is KSPEvent
+        --ACTIONS--
+    --------------------
+    ModuleAeroReentry
+    ---
+        --FIELDS--
+        --EVENTS--
+        --ACTIONS--
+    --------------------
+==========================================
